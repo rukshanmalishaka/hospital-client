@@ -204,10 +204,10 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
                 <Link 
-                  href="/contact"
+                  href="/channeling"
                   className="group inline-flex items-center justify-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-xl hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl animate-pulse-glow"
                 >
-                  Schedule Appointment
+                  Book Doctor Appointment
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link 
