@@ -1,0 +1,88 @@
+# Image Placeholders
+
+This directory contains placeholder references for images used in the MediCare Hospital website.
+
+## Hero Background Images (Now Using Real Images):
+✅ hospital-hero-bg.jpg (Home page hero - Modern hospital building exterior) - Using Unsplash
+✅ about-hero-bg.jpg (About page hero - Medical team in consultation) - Using Unsplash  
+✅ services-hero-bg.jpg (Services page hero - Advanced medical technology/equipment) - Using Unsplash
+✅ contact-hero-bg.jpg (Contact page hero - Communication/phone/contact imagery) - Using Unsplash
+✅ blog-hero-bg.jpg (Blog page hero - Medical research/library/study environment) - Using Unsplash
+
+All hero sections now use high-quality, professional medical images from Unsplash that are:
+- High resolution (2070px width)
+- Optimized for web (q=80 quality)
+- Professional medical/healthcare themed
+- Properly licensed for commercial use
+
+## Required Images:
+
+### Home Page:
+- medical-team.jpg
+- medical-tech.jpg
+- emergency-room.jpg
+- patient-care.jpg
+- emergency-care.jpg
+- cardiac-surgery.jpg
+- neurology.jpg
+- testimonial-1.jpg
+- testimonial-2.jpg
+- testimonial-3.jpg
+- news-1.jpg
+- news-2.jpg
+- news-3.jpg
+
+### About Page:
+- compassion.jpg
+- excellence.jpg
+- collaboration.jpg
+- innovation.jpg
+- milestone-2009.jpg
+- milestone-2012.jpg
+- milestone-2015.jpg
+- milestone-2018.jpg
+- milestone-2021.jpg
+- milestone-2024.jpg
+- doctor-sarah.jpg
+- doctor-michael.jpg
+- doctor-emily.jpg
+- doctor-david.jpg
+- surgical-suite.jpg
+- icu.jpg
+- imaging-center.jpg
+- emergency-dept.jpg
+
+### Services Page:
+- cardiology.jpg
+- neurology.jpg
+- pediatrics.jpg
+- orthopedics.jpg
+- ophthalmology.jpg
+- emergency.jpg
+- robotic-surgery.jpg
+- mri-scanner.jpg
+- ai-diagnostics.jpg
+- telemedicine.jpg
+
+### Contact Page:
+- emergency-dept.jpg
+- ambulance.jpg
+- trauma-center.jpg
+- critical-care.jpg
+
+### Blog Page:
+- blog-1.jpg through blog-9.jpg
+
+## Logo Files:
+- jci-logo.png
+- acs-logo.png
+- magnet-logo.png
+- iso-logo.png
+
+## Recommendations:
+- Use high-quality, professional medical images
+- Ensure all images are optimized for web (WebP format preferred)
+- Maintain consistent aspect ratios
+- Use medical professionals and modern hospital environments
+- Ensure diversity in patient and staff representation
+- Follow HIPAA guidelines for patient privacy in any real images
