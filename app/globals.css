@@ -144,6 +144,15 @@ a {
   }
 }
 
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 @keyframes pulse-glow {
   0%, 100% {
     box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
@@ -187,6 +196,10 @@ a {
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite;
 }
 
 .animate-pulse-glow {

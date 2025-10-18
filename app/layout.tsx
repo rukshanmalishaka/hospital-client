@@ -13,6 +13,7 @@ import Footer from '@/components/Footer';
 import LiveChatWidget from '@/components/LiveChatWidget';
 import EmergencySOSButton from '@/components/EmergencySOSButton';
 import MedicalNewsTicker from '@/components/MedicalNewsTicker';
+import MedicalPreloader from '@/components/MedicalPreloader';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <MedicalPreloader />
         <Navbar />
         <MedicalNewsTicker />
         <main className="min-h-screen">
