@@ -221,7 +221,7 @@ export default function Services() {
             </h1>
             <p className="text-xl text-white/90 leading-relaxed mb-8 animate-fade-in-up">
               Comprehensive healthcare services delivered with expertise, compassion, and cutting-edge technology. 
-              From routine checkups to complex surgeries, we're here to meet all your healthcare needs.
+              From routine checkups to complex surgeries, we&apos;re here to meet all your healthcare needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
               <Link 

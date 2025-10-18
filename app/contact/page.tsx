@@ -227,7 +227,7 @@ export default function Contact() {
               </span>
             </h1>
             <p className="text-xl text-white/90 leading-relaxed mb-8 animate-fade-in-up">
-              We're here to help you with all your healthcare needs. Reach out to us for appointments, 
+              We&apos;re here to help you with all your healthcare needs. Reach out to us for appointments, 
               questions, or emergency services. Your health is our priority.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
@@ -339,7 +339,7 @@ export default function Contact() {
               <div className="mb-8">
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">Send us a Message</h2>
                 <p className="text-xl text-gray-600 mb-6">
-                  Choose the type of inquiry and we'll get back to you as soon as possible.
+                  Choose the type of inquiry and we&apos;ll get back to you as soon as possible.
                 </p>
                 
                 <div className="flex space-x-2 mb-8">
@@ -642,7 +642,7 @@ export default function Contact() {
                     ))}
                   </div>
                 </div>
-                <p className="text-gray-600 mb-4">"{testimonial.text}"</p>
+                <p className="text-gray-600 mb-4">&ldquo;{testimonial.text}&rdquo;</p>
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>

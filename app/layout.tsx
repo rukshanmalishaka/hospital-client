@@ -10,6 +10,9 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import LiveChatWidget from '@/components/LiveChatWidget';
+import EmergencySOSButton from '@/components/EmergencySOSButton';
+import MedicalNewsTicker from '@/components/MedicalNewsTicker';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,10 +31,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
+        <MedicalNewsTicker />
         <main className="min-h-screen">
           {children}
         </main>
         <Footer />
+        <LiveChatWidget />
+        <EmergencySOSButton />
       </body>
     </html>
   );

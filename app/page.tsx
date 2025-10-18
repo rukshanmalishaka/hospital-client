@@ -27,7 +27,10 @@ import {
   ChevronRight,
   ArrowUpRight,
   Target,
-  Sparkles
+  Sparkles,
+  User,
+  MessageCircle,
+  Newspaper
 } from 'lucide-react';
 
 export default function Home() {
@@ -211,11 +214,18 @@ export default function Home() {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link 
-                  href="/services"
+                  href="/checkup"
                   className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary-600 transition-all duration-200"
                 >
-                  <Play className="mr-2 h-5 w-5" />
-                  Watch Our Story
+                  <Stethoscope className="mr-2 h-5 w-5" />
+                  Schedule Checkup
+                </Link>
+                <Link 
+                  href="/portal"
+                  className="group inline-flex items-center justify-center px-6 py-4 border border-white/50 text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-200"
+                >
+                  <User className="mr-2 h-5 w-5" />
+                  Patient Portal
                 </Link>
               </div>
               <div className="flex items-center space-x-8 pt-4 animate-fade-in-up">
@@ -439,7 +449,7 @@ export default function Home() {
                   </div>
                 </div>
                 <Quote className="h-8 w-8 text-primary-200 mb-4" />
-                <p className="text-gray-600 leading-relaxed mb-6">"{testimonial.text}"</p>
+                <p className="text-gray-600 leading-relaxed mb-6">&ldquo;{testimonial.text}&rdquo;</p>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-lg">

@@ -8,7 +8,7 @@ import {
   Shield, 
   Target, 
   Eye,
-  HandHeart,
+  HeartHandshake,
   Globe,
   CheckCircle,
   Star,

@@ -30,7 +30,7 @@ import {
 } from 'lucide-react';
 
 export default function Channeling() {
-  const [selectedDoctor, setSelectedDoctor] = useState(null);
+  const [selectedDoctor, setSelectedDoctor] = useState<any>(null);
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedTime, setSelectedTime] = useState('');
   const [patientInfo, setPatientInfo] = useState({
@@ -148,7 +148,7 @@ export default function Channeling() {
     return dates;
   };
 
-  const handleBookAppointment = (e) => {
+  const handleBookAppointment = (e: React.FormEvent) => {
     e.preventDefault();
     // Simulate booking process
     alert('Appointment booked successfully! You will receive a confirmation email shortly.');
@@ -211,7 +211,12 @@ export default function Channeling() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
               <button 
-                onClick={() => document.getElementById('doctors-section').scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  const element = document.getElementById('doctors-section');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="group inline-flex items-center justify-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-xl hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl animate-pulse-glow"
               >
                 <Calendar className="mr-2 h-5 w-5" />
@@ -299,9 +304,11 @@ export default function Channeling() {
                 <div key={doctor.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-200 p-6">
                   <div className="text-center mb-6">
                     <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
-                      <img 
+                      <Image 
                         src={doctor.image} 
                         alt={doctor.name}
+                        width={96}
+                        height={96}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -360,9 +367,11 @@ export default function Channeling() {
                   <h3 className="text-xl font-bold text-gray-900 mb-4">Selected Doctor</h3>
                   <div className="flex items-center space-x-4">
                     <div className="w-16 h-16 rounded-full overflow-hidden">
-                      <img 
+                      <Image 
                         src={selectedDoctor.image} 
                         alt={selectedDoctor.name}
+                        width={64}
+                        height={64}
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -398,7 +407,7 @@ export default function Channeling() {
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4">Available Time Slots</h3>
                       <div className="grid grid-cols-3 gap-3">
-                        {selectedDoctor.availableSlots.map((time) => (
+                        {selectedDoctor.availableSlots.map((time: string) => (
                           <button
                             key={time}
                             onClick={() => setSelectedTime(time)}
